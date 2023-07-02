@@ -1,73 +1,77 @@
-html{
-    font-size: 16px;
-}
-body{
-    font-family: 'GilroyRegular';
-    font-size: 20px;
-    color: #000;
-    background-color: #fff;
-    min-width:320px; /*хз почему минимум не работает*/
-}
-img{
-    max-width: 100%;
-    height: auto;
-}
-.header{
-    height: 50px;
-}
-.header nav{
-    background-color: #A69688;
-    padding: 0;
-    text-align: start;
-    height: 50px;
+html {
+  font-size: 16px;
 }
 
-.header a:hover{
-    background: #706051;
-    border-radius: 12px;
+body {
+  font-family: "GilroyRegular";
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  min-width: 320px;
+  /*хз почему минимум не работает*/
 }
 
-
-
-
-
-
-.main .welcome{
-    background: linear-gradient(#A69688, #C4C4C4);
-    width: auto;
-    height: 1270px;
-    margin: 0;
-    position: relative
-
-}
-.main .welcome span{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-  
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.main .welcome .logo{
-font-family: 'DaysSansBlack';
-font-size: 120px;
-padding: 0 0 125px 0;
-}
-.main .welcome .text-after-logo{
-    font-size: 36px;
+.header {
+  height: 50px;
 }
 
-.main .news{
-    background: linear-gradient(#C4C4C4, #A69688);
-    width: auto;
-    height: 1098px;
+.header nav {
+  background-color: #a69688;
+  padding: 0;
+  text-align: start;
+  height: 50px;
+  user-select: none;
 }
-.footer{
-    background-color: black;
-    width: 240px;
-    height: 60px;
-    margin: 0;
-    float: right;
+
+.header a:hover {
+  background: #706051;
+  border-radius: 12px;
+}
+
+.main .welcome {
+  background: linear-gradient(#a69688, #c4c4c4);
+  width: auto;
+  height: 1270px;
+  margin: 0;
+  position: relative;
+}
+
+.main .welcome span {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.main .welcome .logo {
+  font-family: "DaysSansBlack";
+  font-size: 120px;
+  padding: 0 0 125px 0;
+  user-select: none;
+}
+
+.main .welcome .text-after-logo {
+  font-size: 36px;
+  user-select: none;
+}
+
+.main .news {
+  background: linear-gradient(#c4c4c4, #a69688);
+  width: auto;
+  height: 1098px;
+}
+
+.footer {
+  background-color: black;
+  width: 240px;
+  height: 60px;
+  margin: 0;
+  float: right;
 }
