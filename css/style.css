@@ -1,52 +1,68 @@
+html{
+    font-size: 16px;
+}
 body{
-    margin: 0;
-}
-.header {
-    background-color: rgb(199, 199, 199);
-    height: 120px;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.header ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.header li{
-    list-style: none;
-}
-.header a{
+    font-family: 'GilroyRegular';
+    font-size: 20px;
     color: #000;
-    text-decoration: none;
-    display: block;
-    white-space: nowrap;
-    width: 200px;
-    text-align: center;
-    font-size: 40px;
+    background-color: #fff;
+    min-width:490px; /*хз почему минимум не работает*/
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
+.header{
+    height: 50px;
+}
+.header nav{
+    background-color: #A69688;
+    padding: 0;
+    text-align: start;
+    height: 50px;
+}
+
 .header a:hover{
-    background: wheat;
+    background: #706051;
+    border-radius: 12px;
 }
 
 
-.main{
-    background-color: rgb(211, 53, 53);
-    width: auto;
-    height: 2400px;
-}
+
+
+
+
 .main .welcome{
-    background-color: rgb(116, 16, 16);
+    background: linear-gradient(#A69688, #C4C4C4);
     width: auto;
-    height: 1200px;
+    height: 1270px;
+    margin: 0;
+    position: relative
+
 }
+.main .welcome span{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+.main .welcome .logo{
+font-family: 'DaysSansBlack';
+font-size: 120px;
+padding: 0 0 125px 0;
+}
+.main .welcome .text-after-logo{
+    font-size: 36px;
+}
+
 .main .news{
     background-color: rgb(190, 106, 10);
     width: auto;
-    height: 1200px;
+    height: 1098px;
 }
 .footer{
     background-color: black;
