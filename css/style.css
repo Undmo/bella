@@ -5,9 +5,9 @@ html {
 body {
   font-family: "GilroyRegular";
   font-size: 20px;
-  color: #000;
-  background-color: #fff;
-  min-width: 320px;
+  color: #fff;
+  background-color: #000;
+  /* min-width: 400px; */
   /*хз почему минимум не работает*/
 }
 
@@ -21,20 +21,27 @@ img {
 }
 
 .header nav {
-  background-color: #a69688;
+  /* background-color: #a69688; */
+  background-color: #000;
   padding: 0;
   text-align: start;
   height: 50px;
   user-select: none;
 }
+.header .nav-link {
+  color: #fff;
+}
+.header .navbar-brand {
+  color: #fff;
+  padding: 8px;
+}
 
 .header a:hover {
-  background: #706051;
+  background: #9c9c9c;
   border-radius: 12px;
 }
 
 .main .welcome {
-  background: linear-gradient(#a69688, #c4c4c4);
   width: auto;
   height: 1270px;
   margin: 0;
@@ -63,7 +70,7 @@ img {
 }
 
 .main .news {
-  background: linear-gradient(#c4c4c4, #a69688);
+  background: linear-gradient(#000000, #ffffff);
   width: auto;
   height: 1098px;
 }
