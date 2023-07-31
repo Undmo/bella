@@ -4,7 +4,6 @@
   src: url("../fonts/GilroyLight/GilroyLight.eot");
   src: url("../fonts/GilroyLight/GilroyLight.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/GilroyLight/GilroyLight.woff") format("woff"),
     url("../fonts/GilroyLight/GilroyLight.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
@@ -14,7 +13,6 @@
   src: url("../fonts/GilroyRegular/GilroyRegular.eot");
   src: url("../fonts/GilroyRegular/GilroyRegular.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/GilroyRegular/GilroyRegular.woff") format("woff"),
     url("../fonts/GilroyRegular/GilroyRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
@@ -24,7 +22,6 @@
   src: url("../fonts/DaysSansBlack/DaysSansBlack.eot");
   src: url("../fonts/DaysSansBlack/DaysSansBlack.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/DaysSansBlack/DaysSansBlack.woff") format("woff"),
     url("../fonts/DaysSansBlack/DaysSansBlack.ttf") format("truetype");
   font-style: normal;
   font-weight: 800;

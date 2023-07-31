@@ -30,10 +30,14 @@ img {
 }
 .header .nav-link {
   color: #fff;
+  padding-left: 20px;
 }
-.header .navbar-brand {
-  color: #fff;
-  padding: 8px;
+.navbar-collapse {
+  background-color: #000;
+}
+.navbar .navbar-toggler-icon {
+  opacity: 1;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .header a:hover {
@@ -43,7 +47,7 @@ img {
 
 .main .welcome {
   width: auto;
-  height: 1270px;
+  height: 50vw;
   margin: 0;
   position: relative;
 }
@@ -59,20 +63,22 @@ img {
 
 .main .welcome .logo {
   font-family: "DaysSansBlack";
-  font-size: 120px;
+  font-size: calc(70px + 50 * (100vw - 320px) / 880);
   padding: 0 0 125px 0;
   user-select: none;
 }
 
 .main .welcome .text-after-logo {
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: calc(24px + 12 * (100vw - 320px) / 880);
+  padding-top: calc(1px + 45 * (100vw - 320px) / 880);
   user-select: none;
 }
 
 .main .news {
   background: linear-gradient(#000000, #ffffff);
   width: auto;
-  height: 1098px;
+  height: 3098px;
 }
 
 .footer {
