@@ -1,57 +1,123 @@
 html {
   font-size: 16px;
 }
-
 body {
   font-family: "GilroyRegular";
   font-size: 20px;
   color: #fff;
   background-color: #000;
-  /* min-width: 400px; */
-  /*хз почему минимум не работает*/
 }
-
+.body_pointer * {
+  overflow: hidden;
+}
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* Header */
 .header {
   height: 50px;
 }
-
+.header button {
+  padding: 22px 6px;
+  background-color: none;
+}
 .header nav {
-  /* background-color: #a69688; */
   background-color: #000;
   padding: 0;
   text-align: start;
   height: 50px;
   user-select: none;
 }
-.header .nav-link {
+.nav-link {
   color: #fff;
   padding-left: 20px;
 }
-.navbar-collapse {
-  background-color: #000;
+.offcanvas.offcanvas-top {
+  margin: 0 10px;
+  background-color: #000000;
+  height: 40%;
+  top: 60px;
 }
+.offcanvas-backdrop.show{
+  background: radial-gradient(#000000, #464646);
+}
+
 .navbar .navbar-toggler-icon {
   opacity: 1;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-
 .header a:hover {
-  background: #9c9c9c;
+  background: #333333;
   border-radius: 12px;
 }
 
+/* Бургер и крестик на меню */
+#nav-icon6 {
+  height: 60px;
+  position: fixed;
+  transition-duration: 1s;
+  cursor: pointer;
+  margin-top: 0px;
+}
+#nav-icon6 span {
+  height: 4px;
+  width: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  transition-duration: 0.25s;
+  transition-delay: 0.25s;
+}
+#nav-icon6 span:before {
+  left: 0;
+  position: absolute;
+  top: -12px;
+  height: 4px;
+  width: 40px;
+  background-color: #ffffff;
+  content: "";
+  border-radius: 20px;
+  transition-duration: 0.25s;
+  transition: transform 0.25s, top 0.25s 0.25s;
+}
+#nav-icon6 span:after {
+  left: 0;
+  position: absolute;
+  top: 12px;
+  height: 4px;
+  width: 40px;
+  background-color: #ffffff;
+  content: "";
+  border-radius: 20px;
+  transition-duration: 0.25s;
+  transition: transform 0.25s, top 0.25s 0.25s;
+}
+#nav-icon6.open span {
+  transition-duration: 0.1s;
+  transition-delay: 0.25s;
+  background: transparent;
+}
+#nav-icon6.open span:before {
+  transition: top 0.25s, transform 0.25s 0.25s;
+  top: 0px;
+  transform: rotateZ(-45deg);
+}
+#nav-icon6.open span:after {
+  transition: top 0.4s, transform 0.25s 0.25s;
+  top: 0px;
+  transform: rotateZ(45deg);
+}
+
+/* Main */
 .main .welcome {
   width: auto;
   height: 50vw;
+  min-height: 667px;
   margin: 0;
   position: relative;
 }
-
 .main .welcome span {
   margin: 0;
   position: absolute;
@@ -60,27 +126,24 @@ img {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-
 .main .welcome .logo {
   font-family: "DaysSansBlack";
   font-size: calc(70px + 50 * (100vw - 320px) / 880);
   padding: 0 0 125px 0;
   user-select: none;
 }
-
 .main .welcome .text-after-logo {
-  /* font-size: 36px; */
   font-size: calc(24px + 12 * (100vw - 320px) / 880);
   padding-top: calc(1px + 45 * (100vw - 320px) / 880);
   user-select: none;
 }
-
 .main .news {
   background: linear-gradient(#000000, #ffffff);
   width: auto;
   height: 3098px;
 }
 
+/* Footer */
 .footer {
   background-color: black;
   width: 240px;
